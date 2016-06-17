@@ -1,4 +1,6 @@
 # -*- coding: utf-8 -*-
+'''从bug.xlsx中获取bug编号，将禅道上对应bug导出'''
+
 import os
 import time
 import yaml
