@@ -1,0 +1,15 @@
+#!/usr/bin/python
+# -*- coding: UTF-8 -*-
+import yaml
+
+file='1.yaml'
+
+data= {'ip00': '192.168.1.1', 'ip01': '192.168.0.1'}
+f=open(file,'w')
+yaml.dump(data,f)
+f.close()
+
+stream = file('1.yaml', 'r')
+s = yaml.load(stream)
+a = s['ip01']
+print a
