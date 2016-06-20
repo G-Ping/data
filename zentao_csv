@@ -1,4 +1,5 @@
-# -*- coding: utf-8 -*-
+#!/usr/bin/python
+# -*- coding: gb2312 -*-
 '''从bug.xlsx中获取bug编号，将禅道上对应bug导出'''
 
 import os
