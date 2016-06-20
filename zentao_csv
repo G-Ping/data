@@ -11,7 +11,7 @@ from selenium.webdriver.support.ui import Select
 import key
 import xlrd
 
-class bug():
+class zentao():
     def __init__(self):
         
         self.driver = webdriver.Firefox()
@@ -107,22 +107,19 @@ def get_bugId():
     return bugId
 
 if __name__ == "__main__":         
-    bugid = get_bugId()     
+    bugid = get_bugId()    
+    '''6个一组'''
     j = len(bugid)/6 + 1
     k = j * 6
     b = [9999]*k
     for i in range(len(bugid)):
         b[i]=bugid[i]
-'''
-    for m in range(j):
-        p = m * 6
-        print b[p], b[p + 1], b[p + 2], b[p + 3], b[p + 4], b[p + 5]
-        '''
-    bug = bug()
+
+    z = zentao()
     for n in range(j):
         p = n * 6
-        bug.bug_search1(b[p],b[p + 1],b[p + 2],b[p + 3],b[p + 4],b[p + 5])
-        bug.dao()
+        z.bug_search1(b[p],b[p + 1],b[p + 2],b[p + 3],b[p + 4],b[p + 5])
+        z.dao()
  
 
 
